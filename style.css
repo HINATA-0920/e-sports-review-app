@@ -1,146 +1,169 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header {
-    background-color: #000000;
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 2px solid #ffffff;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #ffffff;
-    letter-spacing: 2px;
-  }
-  
-  main {
-    flex: 1;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  .url-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 1rem;
-  }
-  
-  input[type="text"] {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    width: 90%;
-    max-width: 400px;
-    background-color: #111111;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    border-radius: 4px;
-  }
-  
-  input[type="text"]::placeholder {
-    color: #aaaaaa;
-  }
-  
-  .center-button {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .center-button button {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
-  
-  .center-button button:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  .videos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* スマホでも2x2表示 */
-    gap: 1rem;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  
-  iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: none;
-    background-color: #000;
-    max-height: 200px; /* スマホでも4画面に収める */
-  }
-  
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 800px;
-    padding: 0 1rem;
-  }
-  
-  .controls button {
-    flex: 1 1 auto;
-    min-width: 120px;
-    padding: 0.6rem 1rem;
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .controls button:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  #generatedUrls {
-    width: 100%;
-    max-width: 600px;
-    color: #ffffff;
-    text-align: left;
-    padding: 1rem;
-    box-sizing: border-box;
-    border-top: 1px solid #ffffff;
-  }
-  /* PC画面のときだけ動画を大きく表示（幅1280px以上） */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000000;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ffffff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.url-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 90%;
+  max-width: 400px;
+  background-color: #111111;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+input[type="text"]::placeholder {
+  color: #aaaaaa;
+}
+
+.center-button {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.center-button button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.center-button button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* スマホでも2x2表示 */
+  gap: 1rem;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  background-color: #000;
+  max-height: 200px; /* スマホでも4画面に収める */
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.controls button {
+  flex: 1 1 auto;
+  min-width: 120px;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.mute-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.mute-controls button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.mute-controls button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#generatedUrls {
+  width: 100%;
+  max-width: 600px;
+  color: #ffffff;
+  text-align: left;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-top: 1px solid #ffffff;
+}
+/* PC画面のときだけ動画を大きく表示（幅1280px以上） */
 @media screen and (min-width: 1280px) {
-    .videos {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    iframe {
-      max-height: 360px; /* PC画面用に動画を大きくする */
-    }
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+
+  iframe {
+    max-height: 360px; /* PC画面用に動画を大きくする */
+  }
+}

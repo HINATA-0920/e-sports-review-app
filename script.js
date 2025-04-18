@@ -21,6 +21,7 @@ document.getElementById("loadVideos").addEventListener("click", function () {
                     playerVars: {
                         start: startTime, // Set the start time if provided
                         enablejsapi: 1,
+                        mute: 1
                     },
                 }));
             } else {
@@ -101,3 +102,19 @@ function extractYouTubeVideoIdAndTime(url) {
     const startTime = timeMatch ? parseInt(timeMatch[1], 10) : 0; // Default to 0 if no time specified
     return { videoId, startTime };
 }
+
+for (let i = 1; i <= 4; i++) {
+    const btn = document.getElementById(`mute${i}`);
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const player = players[i - 1];
+        if (player) {
+          if (player.isMuted()) {
+            player.unMute();
+          } else {
+            player.mute();
+          }
+        }
+      });
+    }
+  }
