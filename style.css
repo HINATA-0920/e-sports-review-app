@@ -1,23 +1,39 @@
 body {
+<<<<<<< HEAD
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000000; /* 完全な黒背景 */
     color: #ffffff; /* 白文字 */
+=======
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+>>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
+<<<<<<< HEAD
     background-color: #000000;
     padding: 1rem;
     text-align: center;
     border-bottom: 2px solid #ffffff; /* 白い下線でアクセント */
+=======
+    background-color: #1e1e1e;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+>>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
 }
 
 header h1 {
     margin: 0;
+<<<<<<< HEAD
     font-size: 2rem;
     color: #ffffff;
     letter-spacing: 2px;
@@ -73,6 +89,38 @@ iframe {
     flex: 1 1 auto;
     min-width: 120px;
     padding: 0.5rem;
+=======
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+input[type="text"] {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: #333333;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+>>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
     background-color: #007bff;
     color: white;
     border: none;
@@ -81,7 +129,40 @@ iframe {
     font-size: 1rem;
 }
 
+<<<<<<< HEAD
 .controls button:hover {
     background-color: #0056b3;
 }
 
+=======
+button:hover {
+    background-color: #0056b3;
+}
+
+.controls {
+    margin-bottom: 1rem;
+}
+
+#generatedUrls {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1300px;
+}
+
+iframe {
+    width: 640px;
+    height: 360px;
+    border: none;
+    background-color: #000;
+}
+>>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
