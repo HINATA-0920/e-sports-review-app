@@ -1,78 +1,101 @@
 body {
-<<<<<<< HEAD
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* 完全な黒背景 */
-    color: #ffffff; /* 白文字 */
-=======
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
+    background-color: #000000;
     color: #ffffff;
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-header {
-<<<<<<< HEAD
+  }
+  
+  header {
     background-color: #000000;
     padding: 1rem;
     text-align: center;
-    border-bottom: 2px solid #ffffff; /* 白い下線でアクセント */
-=======
-    background-color: #1e1e1e;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
-}
-
-header h1 {
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  header h1 {
     margin: 0;
-<<<<<<< HEAD
     font-size: 2rem;
     color: #ffffff;
     letter-spacing: 2px;
-}
-
-
-
-.url-grid {
+  }
+  
+  main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .url-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto 1rem auto;
-}
-
-.center-button {
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"] {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 90%;
+    max-width: 400px;
+    background-color: #111111;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #aaaaaa;
+  }
+  
+  .center-button {
     text-align: center;
     margin-bottom: 1rem;
-}
-
-.videos {
+  }
+  
+  .center-button button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .center-button button:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .videos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 常に2列で表示 */
+    grid-template-columns: repeat(2, 1fr); /* スマホでも2x2表示 */
     gap: 1rem;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-}
-
-
-iframe {
+  }
+  
+  iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
     background-color: #000;
-}
-
-.controls {
+    max-height: 200px; /* スマホでも4画面に収める */
+  }
+  
+  .controls {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,89 +103,44 @@ iframe {
     margin-top: 1rem;
     width: 100%;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 1rem;
-}
-
-.controls button {
+  }
+  
+  .controls button {
     flex: 1 1 auto;
     min-width: 120px;
-    padding: 0.5rem;
-=======
-    font-size: 1.8rem;
+    padding: 0.6rem 1rem;
+    background-color: transparent;
     color: #ffffff;
-}
-
-main {
-    flex: 1;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-input[type="text"] {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 400px;
-    background-color: #333333;
-    border: none;
-    color: #ffffff;
-    border-radius: 5px;
-}
-
-button {
-    padding: 0.5rem 1rem;
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
     font-size: 1rem;
-}
-
-<<<<<<< HEAD
-.controls button:hover {
-    background-color: #0056b3;
-}
-
-=======
-button:hover {
-    background-color: #0056b3;
-}
-
-.controls {
-    margin-bottom: 1rem;
-}
-
-#generatedUrls {
-    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  #generatedUrls {
     width: 100%;
     max-width: 600px;
-    text-align: left;
     color: #ffffff;
-}
-
-.videos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    width: 100%;
-    max-width: 1300px;
-}
-
-iframe {
-    width: 640px;
-    height: 360px;
-    border: none;
-    background-color: #000;
-}
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
+    text-align: left;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-top: 1px solid #ffffff;
+  }
+  /* PC画面のときだけ動画を大きく表示（幅1280px以上） */
+@media screen and (min-width: 1280px) {
+    .videos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    iframe {
+      max-height: 360px; /* PC画面用に動画を大きくする */
+    }
+  }
+  

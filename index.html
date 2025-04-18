@@ -1,78 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-<<<<<<< HEAD
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>e-sports review app</title>
-    <link rel="stylesheet" href="style.css" />
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-sports review app</title>
-    <link rel="stylesheet" href="style.css">
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
-    <script src="https://www.youtube.com/iframe_api"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-sports review app</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
-    <header>
-        <h1>e-sports review app</h1>
-    </header>
-<<<<<<< HEAD
+  <header>
+    <h1>e-sports review app</h1>
+  </header>
 
-    <main>
-        <form id="videoForm">
-            <h2>Enter up to 4 YouTube URLs</h2>
-            <div class="url-grid">
-                <input type="text" id="url1" placeholder="Enter YouTube URL 1" />
-                <input type="text" id="url2" placeholder="Enter YouTube URL 2" />
-                <input type="text" id="url3" placeholder="Enter YouTube URL 3" />
-                <input type="text" id="url4" placeholder="Enter YouTube URL 4" />
-            </div>
-            <div class="center-button">
-                <button type="button" id="loadVideos">Load Videos</button>
-            </div>
-        </form>
+  <main>
+    <form id="videoForm">
+      <h2>Enter up to 4 YouTube URLs</h2>
+      <div class="url-grid">
+        <input type="text" id="url1" placeholder="Enter YouTube URL 1" />
+        <input type="text" id="url2" placeholder="Enter YouTube URL 2" />
+        <input type="text" id="url3" placeholder="Enter YouTube URL 3" />
+        <input type="text" id="url4" placeholder="Enter YouTube URL 4" />
+      </div>
+      <div class="center-button">
+        <button type="button" id="loadVideos">Load Videos</button>
+      </div>
+    </form>
 
-        <div class="videos" id="videoContainer">
-            <!-- YouTube videos will appear here -->
-        </div>
+    <div class="videos" id="videoContainer"></div>
 
-=======
-    <main>
-        <form id="videoForm">
-            <h2>Enter up to 4 YouTube URLs</h2>
-            <input type="text" id="url1" placeholder="Enter YouTube URL 1">
-            <input type="text" id="url2" placeholder="Enter YouTube URL 2">
-            <input type="text" id="url3" placeholder="Enter YouTube URL 3">
-            <input type="text" id="url4" placeholder="Enter YouTube URL 4">
-            <button type="button" id="loadVideos">Load Videos</button>
-        </form>
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
-        <div class="controls">
-            <button id="playAll">Play All</button>
-            <button id="pauseAll">Pause All</button>
-            <button id="forwardAll">Forward 10s</button>
-            <button id="backwardAll">Backward 10s</button>
-            <button id="generateUrls">Generate URLs</button>
-        </div>
-<<<<<<< HEAD
+    <div class="controls">
+      <button id="playAll">Play All</button>
+      <button id="pauseAll">Pause All</button>
+      <button id="forwardAll">Forward 10s</button>
+      <button id="backwardAll">Backward 10s</button>
+      <button id="generateUrls">Generate URLs</button>
+    </div>
 
-        <div id="generatedUrls">
-            <!-- Generated time-linked URLs will appear here -->
-        </div>
-    </main>
+    <div id="generatedUrls"></div>
+  </main>
 
-    <!-- JavaScriptをHTMLの最後で読み込む -->
-=======
-        <div id="generatedUrls">
-            <!-- Generated URLs will appear here -->
-        </div>
-        <div class="videos" id="videoContainer">
-            <!-- Videos will be displayed here -->
-        </div>
-    </main>
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

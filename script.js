@@ -100,8 +100,4 @@ function extractYouTubeVideoIdAndTime(url) {
     const videoId = videoMatch ? videoMatch[2] : null;
     const startTime = timeMatch ? parseInt(timeMatch[1], 10) : 0; // Default to 0 if no time specified
     return { videoId, startTime };
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9e14b40d20994ba57aac609a281dafbde2e60640
